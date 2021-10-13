@@ -45,6 +45,8 @@ class SolutionBetter(object):
 
 class SolutionBest(object):
     """
+    Summary: Use cache to store compliments.
+
     Single pass solution were a value is cached in dict as we pass through and also we check if a complementary
     value is already present in dict.
 
