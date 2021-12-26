@@ -35,7 +35,11 @@ class SolutionBest(object):
 
 
 if __name__ == "__main__":
-    # s = SolutionNaive()
-    s = SolutionBest()
+
+    s = SolutionNaive()
     assert (s.maxSubArray([-2, 1, -3, 4, - 1, 2, 1, -5, 4]) == 6)
+    assert (s.maxSubArray([-1]) == -1)
+
+    s = SolutionBest()
+    assert (s.maxSubArray([-2, 1, -3, 4, - 1, 2, 1, -5, 4]) == 5)
     assert (s.maxSubArray([-1]) == -1)

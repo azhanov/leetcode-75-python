@@ -2,9 +2,9 @@
 
 def find_most_frequent_char(input_string):
     """
-    Given a string, find and return a character with the most frequent occurrence.
+    Given a strings, find and return a character with the most frequent occurrence.
     If more then one char have the same largest occurrence, the first one will be returned.
-    If an empty string is send, the function returns None
+    If an empty strings is send, the function returns None
     :param input_string:
     :return: char
     """

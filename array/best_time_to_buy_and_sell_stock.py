@@ -25,7 +25,8 @@ class SolutionNaive(object):
 
 class SolutionBest(object):
     """
-    Summary: find the low and keep calculating profit, if find lower low, reset min_price and search for better profit
+    Summary: find the low and keep calculating max possible profit going forward, if find lower low -
+    reset min_price and search for better profit
 
     Visual representation of 7, 1, 5, 3, 6, 4
      \
