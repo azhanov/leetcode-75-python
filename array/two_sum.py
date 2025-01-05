@@ -14,7 +14,8 @@ class SolutionNaive(object):
         :rtype: List[int]
         """
         for idx, num in enumerate(nums):
-            for idx_inner, num_inner in enumerate(nums):
+            for idx_inner in range(idx+1, len(nums)):
+                num_inner = nums[idx_inner]
                 if idx_inner != idx and num_inner + num == target:
                     return [idx, idx_inner]
 
@@ -22,7 +23,7 @@ class SolutionNaive(object):
 class SolutionBetter(object):
     """
     Two pass solutions where first pass caches numbers and their corresponding index
-    and the second one looks up an complementing value from dict rather then doing a full scan
+    and the second one looks up a complementing value from dict rather than doing a full scan
 
     O(N) time complexity
     O(N) space complexity
@@ -47,7 +48,7 @@ class SolutionBest(object):
     """
     Summary: Use cache to store compliments.
 
-    Single pass solution were a value is cached in dict as we pass through and also we check if a complementary
+    Single pass solution were a value is cached in dict as we pass through, and also we check if a complementary
     value is already present in dict.
 
     O(N) time complexity

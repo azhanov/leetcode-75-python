@@ -1,5 +1,4 @@
 
-
 class SolutionNaive(object):
     """
     Iterate over every number and again in the inner loop, searching forward from the current price, while keeping

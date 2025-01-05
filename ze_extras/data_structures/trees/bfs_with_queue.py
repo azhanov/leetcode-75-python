@@ -1,4 +1,4 @@
-from Graphs.node import Node, create_tree
+from utils.node import Node, create_tree
 
 queue = []
 
